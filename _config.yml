@@ -1,6 +1,18 @@
+# Note: this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
 # Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
 title: MyPaint
-description: "MyPaint is an easy-to-use painting program which works well with Wacom graphics tablets and other similar devices. It comes with a large brush collection including charcoal and ink to emulate real media, but the highly configurable brush engine allows you to experiment with your own brushes and with not-quite-natural painting."
+email: TODO@domain.com
+description: > # MyPaint is an easy-to-use painting program which works well with
+  Wacom graphics tablets and other similar devices. It comes with a large brush
+  collection including charcoal and ink to emulate real media, but the highly
+  configurable brush engine allows you to experiment with your own brushes and
+  with not-quite-natural painting.
 baseurl: ""
 url: "http://mypaint.org"
 twitter_username: MyPaintApp
@@ -9,6 +21,12 @@ github_username:  mypaint
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+gems:
+  - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock
 
 defaults:
   -
