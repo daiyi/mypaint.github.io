@@ -31,3 +31,8 @@ Go to http://127.0.0.1:4000 and see the website!
 ## Blog writing
 
 To do!
+
+## To Do
+
+- add linters
+- extract theme to separate repo
