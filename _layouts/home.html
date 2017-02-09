@@ -8,63 +8,68 @@ layout: default
 <div class="content">
 
   <div class="headline pure-g">
-      <h1>
-        an open-source, minimalist painting tool.
-      </h1>
-      <p>
-        <a href="/download" class="pure-button pure-button-primary">download</a>
-      </p>
+      <div class="l-box">
+        <h1>
+          an open-source, minimalist painting tool.
+        </h1>
+        <p>
+          <a href="/download" class="pure-button pure-button-primary">download</a>
+        </p>
+
+      </div>
   </div>
 
 
   <div class="home pure-g">
+    <div class="l-box">
 
-    <div class="posts pure-u-1">
-      MyPaint is a nimble, distraction-free, and easy tool for digital painters. It supports graphics tablets made by Wacom, and many similar devices. Its brush engine is versatile and configurable, and it provides useful, productive tools.
-    </div>
+      <div class="posts pure-u-1">
+        MyPaint is a nimble, distraction-free, and easy tool for digital painters. It supports graphics tablets made by Wacom, and many similar devices. Its brush engine is versatile and configurable, and it provides useful, productive tools.
+      </div>
 
-    <div class="posts pure-u-1">
-      <h2>Features</h2>
-      <ul>
-        <li>Designed for pressure sensitive graphics tablets</li>
-        <li>Infinite-scroll canvas</li>
-        <li>emulate real media with brush creation and configuration</li>
-        <li>Minimalistic</li>
-        <li>Layers</li>
-        <li>Open source!</li>
-      </ul>
-    </div>
+      <div class="posts pure-u-1">
+        <h2>Features</h2>
+        <ul>
+          <li>Designed for pressure sensitive graphics tablets</li>
+          <li>Infinite-scroll canvas</li>
+          <li>emulate real media with brush creation and configuration</li>
+          <li>Minimalistic</li>
+          <li>Layers</li>
+          <li>Open source!</li>
+        </ul>
+      </div>
 
-    <div class="posts pure-u-1">
-      <h2>From the Blog</h2>
+      <div class="posts pure-u-1">
+        <h2>From the Blog</h2>
 
-      {% for post in site.posts limit:2 %}
-        <div class="post">
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-          <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-          <div class="excerpt">
-            {{ post.excerpt }}
+        {% for post in site.posts limit:2 %}
+          <div class="post">
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+            <div class="excerpt">
+              {{ post.excerpt }}
+            </div>
           </div>
-        </div>
-      {% endfor %}
+        {% endfor %}
+      </div>
+
+      <div class="posts pure-u-1">
+        <h2>Community</h2>
+        <p>We're on twitter and we have a forum!
+      </div>
+
+      <div class="posts pure-u-1">
+        <h2>Contributing</h2>
+        <h3>Development</h3>
+          <p>MyPaint is mostly written in Python, with some C++. The brush engine is written as a portable C library. More on core development here.
+
+          <p>Check out the project on github!
+
+          <p>We also need web development help! See here.
+        <h3>Artists</h3>
+          <p>Not a programmer? That's okay! Contribute your custom brushes and art. We also love tutorials and need help with translation, documentation and bug reports. More here.
+      </div>
+
     </div>
-
-    <div class="posts pure-u-1">
-      <h2>Community</h2>
-      <p>We're on twitter and we have a forum!
-    </div>
-
-    <div class="posts pure-u-1">
-      <h2>Contributing</h2>
-      <h3>Development</h3>
-        <p>MyPaint is mostly written in Python, with some C++. The brush engine is written as a portable C library. More on core development here.
-
-        <p>Check out the project on github!
-
-        <p>We also need web development help! See here.
-      <h3>Artists</h3>
-        <p>Not a programmer? That's okay! Contribute your custom brushes and art. We also love tutorials and need help with translation, documentation and bug reports. More here.
-    </div>
-
   </div>
 </div>
