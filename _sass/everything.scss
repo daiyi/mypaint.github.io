@@ -91,13 +91,16 @@ a:hover {
 
 .nav-menu {
     position: relative;
-    -webkit-transition: height 0.5s;
-    -moz-transition: height 0.5s;
-    -ms-transition: height 0.5s;
     transition: height 0.5s;
-    text-align: right;
-    white-space: normal;
+    -webkit-font-smoothing: antialiased;
     z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .pure-menu-horizontal {
+      white-space: normal;
+    }
 }
 
 .nav-menu a {
@@ -111,9 +114,8 @@ a:hover {
     color: #AECFE5;
 }
 
-.nav-menu {
-    display: flex;
-    justify-content: space-between;
+.pure-menu-header-wrapper {
+    order: 0;
 }
 
 /*
@@ -181,6 +183,49 @@ footer {
       color: $font-color-secondary;
       text-decoration: none;
   }
+}
+
+/*
+ * -- MOBILE/smol --
+ */
+@media (max-width: 48em) {
+
+    .pure-menu {
+      text-align: left;
+    }
+
+    .pure-menu-header-wrapper {
+      margin-top: 20px;
+      order: 1;
+      font-size: 120%;
+    }
+
+    .pure-menu-horizontal {
+        padding: 8px;
+
+        .pure-menu-item {
+            display: inline-flex;
+            a {
+              padding: 0;
+            }
+            &:after {
+              content: "/";
+              padding: 0 8px;
+              color: $font-color-secondary;
+            }
+        }
+
+    }
+
+    .pure-menu-horizontal {
+      .pure-menu-item {
+        &:last-child {
+          &:after {
+            content: "";
+          }
+        }
+      }
+    }
 }
 
 /*
