@@ -41,9 +41,9 @@ a:hover {
  * -- LAYOUT STYLES --
  * These are some useful classes which I will need
  */
-// .l-box {
-//     padding: 1em;
-// }
+.l-box {
+    padding: 1em;
+}
 
 .l-box-lrg {
     padding: 2em;
@@ -68,20 +68,21 @@ a:hover {
  * -- PURE BUTTON STYLES --
  * I want my pure-button elements to look a little different
  */
-.pure-button {
-    background-color: $button-color;
-    color: white;
-    padding: 0.5em 2em;
-}
-.pure-button:hover {
-    background-image: none;
-    background-color: darken($button-color, 10%);
-}
 
-a.pure-button-primary {
-    background-color: $accent-secondary;
-    font-size: 120%;
-}
+  .pure-button {
+      background: $button-color;
+      padding: 0.5em 2em;
+  }
+
+  .pure-button:hover {
+      background: darken($button-color, 10%);
+      color: white;
+  }
+
+  a.pure-button-primary {
+      font-size: 120%;
+      text-decoration: none;
+  }
 
 
 /*
@@ -131,21 +132,18 @@ a.pure-button-primary {
 }
 
 .headline {
+    .pure-button {
+        background: none;
+        color: $button-color;
+        border: 2px solid $button-color;
+    }
 
-  .pure-button {
-      background-color: none;
-      border: 1px solid $button-color;
-      color: white;
-      padding: 0.5em 2em;
-  }
-  .pure-button:hover {
-      text-decoration: none;
-  }
-
-  a.pure-button-primary {
-      background-color: none;
-      border: 1px solid $accent-secondary;
-  }
+    .pure-button:hover {
+        background: $accent-secondary;
+        color: white;
+        text-decoration: none;
+        border: 2px solid $accent-secondary;
+    }
 }
 
 /*
@@ -169,7 +167,20 @@ a.pure-button-primary {
 
 /* This is the class used for the footer */
 footer {
-  background-color: #E6F7FC;
+  background-color: $accent-primary;
+  color: white;
+
+  .pure-menu a {
+      color: white;
+  }
+  .pure-menu li a:hover,
+  .pure-menu li a:focus,
+  .pure-menu li a:hover {
+      background: none;
+      border: none;
+      color: $font-color-secondary;
+      text-decoration: none;
+  }
 }
 
 /*
