@@ -224,6 +224,9 @@ footer {
  * -- MOBILE/smol --
  */
 @media (max-width: 48em) {
+    .l-box {
+        padding: 1em;
+    }
 
     .pure-menu {
       text-align: left;
