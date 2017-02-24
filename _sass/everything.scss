@@ -83,6 +83,7 @@ h3 {
 article {
     font-family: $font-reading;
     line-height: 2em;
+    padding-top: 2em;
 }
 
 /*
@@ -199,8 +200,8 @@ a.pure-button-primary {
 
 .headline {
   margin-top: 100px;
+	margin-bottom: 100px;
 }
-
 
 .headline {
     .pure-button {
@@ -286,10 +287,6 @@ footer {
  * -- Purecss md (768px) --
  */
 @media screen and (max-width: 48em) {
-
-  .headline {
-    margin-bottom: 100px;
-  }
 
   .content {
     padding: 2em;
