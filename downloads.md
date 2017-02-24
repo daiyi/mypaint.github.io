@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Downloads
-permalink: /downloads/
+permalink: /download/
 ---
 
 You can download our latest builds from
