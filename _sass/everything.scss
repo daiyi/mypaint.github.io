@@ -197,9 +197,9 @@ a.pure-button-primary {
     z-index: -1; /* Don't know why, but it was causing problems. */
 }
 
-// .headline {
-//   margin-top: 100px;
-// }
+.headline {
+  margin-top: 100px;
+}
 
 
 .headline {
@@ -287,9 +287,10 @@ footer {
  */
 @media screen and (max-width: 48em) {
 
-  // .headline {
-  //   margin-bottom: 100px;
-  // }
+  .headline {
+    margin-bottom: 100px;
+  }
+
   .content {
     padding: 2em;
   }
