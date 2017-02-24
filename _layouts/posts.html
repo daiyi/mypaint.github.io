@@ -3,10 +3,15 @@ layout: default
 ---
 
 <div class="content">
+
+{% include title.html %}
+
+  </body>
+</html>
   <div class="home pure-g">
 
     <div class="posts pure-u-1">
-      {% for post in site.posts limit:2 %}
+      {% for post in site.posts %}
         <div class="post">
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
           <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
