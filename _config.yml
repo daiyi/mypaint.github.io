@@ -15,6 +15,7 @@ description:  MyPaint is a nimble, distraction-free, and easy
 
 baseurl: ""
 url: "http://mypaint.org"
+logo: "/assets/site/2016-0320-Site_Logo.png"
 twitter_username: MyPaintApp
 github_username:  mypaint
 
