@@ -255,9 +255,16 @@ a.pure-button-primary {
     order: 0;
 }
 
-.plaintext-logo h3 {
+.logo {
   padding: 10px 30px;
-  color: $nav-link-color;
+
+  h3 {
+    color: $nav-link-color;
+  }
+
+  img {
+    max-height: 30px;
+  }
 }
 
 /*
@@ -396,6 +403,10 @@ footer {
 
    .nav-menu {
      padding: 0;
+   }
+
+   .logo {
+     padding: 10px 10px;
    }
 }
 
