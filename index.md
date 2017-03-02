@@ -2,12 +2,13 @@
 layout: home
 title: An Open-Source, Minimalist Painting Tool.
 features:
-  - Designed for pressure sensitive graphics tablets
-  - Infinite-scroll canvas
-  - emulate real media with brush creation and configuration
-  - Minimalistic
-  - Layers
-  - Open source!
+  - brush creation & configuration
+  - pressure sensitivity for graphics tablets
+  - infinite-scroll canvas
+  - emulate real media
+  - minimalistic
+  - layers support
+  - open source!
 community: We're on twitter and we have a forum!
 development: >
   MyPaint is mostly written in Python, with some C++. The brush

@@ -6,12 +6,18 @@ $accent-secondary:      #1f8dd6;
 $font-color-primary:    #333;
 $font-color-secondary:  lighten($font-color-primary, 15%);
 
-$font-reading:          "Georgia, Cambria, Times New Roman, Palatino, serif";
-
 $button-color:          $accent-primary;
 $header-color:          $font-color-secondary;
+
+$nav-link-color:        #fff;
+
+$header-font:           "Arvo";
+$accent-font:           "Merriweather Sans";
+$content-font:          "Roboto";
 
 // base, buttons, grids, grids-responsive, menus
 @import "pure";
 @import "everything";
 @import "image_mods";
+
+@import url('https://fonts.googleapis.com/css?family=Arvo|Merriweather+Sans|Roboto');
