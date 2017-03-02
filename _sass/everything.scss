@@ -108,21 +108,28 @@ h2 + h3 {
   line-height: 1.7em;
 }
 
-
-article {
+.posts-excerpts {
+  article {
     line-height: 2em;
     padding-top: 2em;
+  }
+}
 
-    .excerpt {
-      a {
-        color: $font-color-primary;
-        border-bottom: 1px dotted $font-color-primary;
-      }
-      a:hover {
-        border-bottom: 2px solid;
-        text-decoration: none;
-      }
+.post-content {
+  margin-top: 40px;
+}
+
+article {
+  .post-content, .excerpt {
+    a {
+      color: $font-color-primary;
+      border-bottom: 1px dotted $font-color-primary;
     }
+    a:hover {
+      border-bottom: 2px solid;
+      text-decoration: none;
+    }
+  }
 }
 
 .home {
@@ -155,7 +162,11 @@ article {
 }
 
 .post {
-  margin: 20px 0 30px;
+  margin: 20px 0 50px;
+}
+
+.comments {
+  margin-top: 100px;
 }
 
 /*
@@ -177,12 +188,12 @@ article {
     font-weight: 500;
   }
 
-  .post-date {
-    white-space: nowrap;
-    font-size: 14px;
-    color: $font-color-secondary;
-    text-transform: uppercase;
-  }
+}
+.post-date {
+  white-space: nowrap;
+  font-size: 14px;
+  color: $font-color-secondary;
+  text-transform: uppercase;
 }
 
 .pure-button {
@@ -356,6 +367,10 @@ footer {
       padding: 0;
     }
 
+    .post {
+      margin-bottom: 0px;
+    }
+
     .pure-menu-header-wrapper {
       margin-top: 20px;
       order: 1;
@@ -367,9 +382,6 @@ footer {
      .pure-button {
        margin-top: 0;
      }
-   }
-   .content, #content {
-     padding-left: 0;
    }
 }
 
