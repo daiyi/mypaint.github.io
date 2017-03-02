@@ -1,5 +1,6 @@
 ---
 layout: home
+plaintext_logo: true
 title: An Open-Source, Minimalist Painting Tool.
 features:
   - brush creation & configuration
@@ -17,5 +18,4 @@ development: >
 artist: >
   Contribute your custom brushes and art! We also love tutorials and
   need help with translation, documentation and bug reports. More here.
-show_download: true
 ---
