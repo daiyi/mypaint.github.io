@@ -234,6 +234,10 @@ a.pure-button-primary {
     .pure-menu-horizontal {
       white-space: normal;
     }
+
+    ul {
+      line-height: 0.7em;
+    }
 }
 
 .nav-menu a {
@@ -381,7 +385,12 @@ footer {
      margin-bottom: 0;
      .pure-button {
        margin-top: 0;
+       margin-bottom: 50px;
      }
+   }
+
+   .nav-menu {
+     padding: 0;
    }
 }
 
@@ -431,7 +440,7 @@ footer {
             padding: 0;
           }
           &:after {
-            content: "|";
+            content: "/";
             padding: 0 8px;
             color: $font-color-secondary;
           }
