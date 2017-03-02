@@ -55,14 +55,21 @@ h2 {
   font-size: 24px;
   background: #555;
   color: white;
-  display: inline;
+  display: inline-block;
   padding: 3px 20px;
   margin-left: -20px;
+}
+
+p + h2, p + h3 {
+  margin-top: 1.5em;
 }
 
 h3 {
   font-size: 22px;
   font-family: $accent-font;
+}
+h2 + h3 {
+  margin-top: 1em;
 }
 
 #wrapper {
@@ -81,6 +88,19 @@ h3 {
    bottom:0;
    width:100%;
    height: auto;   /* Height of the footer */
+}
+
+#page {
+.nav-menu a {
+    color: $accent-secondary;
+}
+.nav-menu li a:hover,
+.nav-menu li a:focus,
+.nav-menu a:hover {
+    background: none;
+    border: none;
+    color: darken($accent-secondary, 30%);
+}
 }
 
 .pure-g {
@@ -240,7 +260,7 @@ a.pure-button-primary {
 
 
 .headline {
-  margin-top: 100px;
+  margin-top: 160px;
   margin-bottom: 100px;
 
   h1 {
