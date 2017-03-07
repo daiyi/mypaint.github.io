@@ -8,7 +8,8 @@
 # in the templates via {{ site.myvariable }}.
 title: MyPaint
 email: TODO@domain.com
-description:  MyPaint is a nimble, distraction-free, and easy
+description: >
+  MyPaint is a nimble, distraction-free, and easy
   tool for digital painters. It supports graphics tablets made by Wacom,
   and many similar devices. Its brush engine is versatile and
   configurable, and it provides useful, productive tools.

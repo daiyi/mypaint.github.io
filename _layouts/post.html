@@ -1,21 +1,20 @@
 ---
-layout: default
+layout: page
 ---
-<div class="content">
+<article>
 
-  {% include title.html %}
+<header class="post-header">
+  <p class="post-date">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+</header>
 
-  <div class="post">
+<div class="post">
 
-    <header class="post-header">
-      <p class="meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-    </header>
+  <div class="post-content">
+    {{ content }}
+  </div>
 
-    <article class="post-content">
-      {{ content }}
-    </article>
-
-    {% if page.comments %}
+  {% if page.comments %}
+  <div class="comments">
     <div id="discourse-comments"></div>
 
       <script type="text/javascript">
@@ -39,3 +38,4 @@ layout: default
     {% endif %}
   </div>
 </div>
+</article>
